@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial de Utilização da Aplicação de Extração com OCR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #007BFF;
+            text-align: center;
+        }
+        .step {
+            margin-bottom: 30px;
+        }
+        /* .step img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #000;
+        } */
+        .img-solucao {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #000; /* Borda grossa nas imagens */
+        }        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .downloads {
+            margin-top: 20px;
+        }
+        .downloads a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .downloads a:hover {
+            background-color: #0056b3;
+        }
+
+        .icon {
+            display:inline-block;
+            margin: auto auto;
+            width: 40px; /* Tamanho do ícone */
+            height: 40px; /* Tamanho do ícone */            
+        }        
+        p {
+            margin: 10px 0;
+        }        
+        .benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 10px 0;
+
+        }        
+    </style>
+</head>
+<body>
+
+    <h1>Como Extrair Texto de Documentos Digitalizados e Imagens</h1>
+    <p>Aprenda a extrair textos de documentos digitalizados e imagens de forma rápida e eficiente, economizando tempo e esforço. Extraia informações de contratos, faturas, relatórios e muito mais, e transforme-os em textos editáveis e pesquisáveis para facilitar seu trabalho diário.</p>
+
+    <h2>Casos de Uso e Benefícios</h2>
+        <p>🔍 <strong>Busca e Indexação:</strong> Transforme documentos digitalizados em textos pesquisáveis, facilitando a busca por informações específicas.</p>
+        <p>📄 <strong>Automatização de Processos:</strong> Extraia dados automaticamente para preencher formulários, bancos de dados ou relatórios.</p>
+        <p>📚 <strong>Digitalização de Arquivos:</strong> Converta arquivos físicos em digitais, permitindo armazenamento e compartilhamento eficientes.</p>
+        <p>💼 <strong>Aumento de Produtividade:</strong> Reduza o tempo gasto na digitação manual de textos de documentos digitalizados e imagens.</p>
+        <p>🌍 <strong>Disponibilidade Pública:</strong> Esta aplicação está disponível para todos e permite a carga de um arquivo por vez. <em>Versão Pública: 1.3.5</em></p>
+        <p>🏢 <strong>Solução Corporativa:</strong> Para empresas, oferecemos uma solução corporativa que permite a carga em lote de arquivos e o armazenamento das extrações em um banco de dados. A nova versão 2.0 inclui integração com a API da OpenAI, permitindo funcionalidades avançadas de processamento de linguagem natural.</p>
+        <p>💡 <strong>Possibilidades com a API da OpenAI:</strong> Após a extração do texto, utilize o chat da OpenAI embutido na aplicação para realizar análises, gerar resumos, responder perguntas sobre o conteúdo extraído e muito mais, tudo de forma automática e eficiente.</p>
+        <p>A solução corporativa é ideal para empresas que precisam processar grandes quantidades de documentos regularmente, proporcionando benefícios como automação avançada, melhor gerenciamento de dados e economia significativa de tempo e recursos.</p>
+
+    <h2>Vídeo Tutorial</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <h2>Passo a Passo</h2>
+
+    <div class="step">
+        <h3>🌐 Acesse a Aplicação</h3>
+        <p>Primeiro, abra a <a href="URL_DA_APLICACAO" target="_blank"> </a>aplicação de extração de texto com OCR</a> em seu navegador. Você verá uma interface similar à abaixo:</p>
+        <img src="tutorial - tela inicial.png" alt="Interface da aplicação" class="img-solucao">
+    </div>
+
+    <div class="step">
+        <h3>📁 Carregue o Arquivo</h3>
+        <p>📤 Clique no botão <img src="upload.png" class="icon"> para carregar a imagem, PDF ou arquivo DOCX do qual você deseja extrair o texto.</p>
+        <img src="tutorial - 2 botão de download.png" alt="Botão de upload" class="img-solucao">
+    </div>
+
+    <div class="step">
+        <h3>🔍 Selecione o Tipo de Arquivo</h3>
+        <p>Selecione o arquivo local (imagem, PDF, DOCX) ou da web com o link "https://arquivo.tipo".</p>
+        <img src="tutorial - 3 selecionar arquivo local ou web.png" alt="Menu de seleção de tipo de arquivo" class="img-solucao">
+    </div>
+
+    <div class="step">
+        <h3>🌍 Selecione o idioma</h3>
+        <p> Ao selecionar o idioma correspondente no arquivo ou imagem digitalizado, ele será extraído com melhor precisão de reconhecimento dos caracteres. Isso acontece porque os dados de treinamento e idenficação de imagem são feitos por região.</p>
+        <p><strong>Extração para até 10 idiomas</strong></p>
+        <p>Oferecemos suporte para extração em tempo real para uma variedade de idiomas:</p>
+        <ul>
+            <li>🇺🇸 Inglês</li>
+            <li>🇧🇷 Português</li>
+            <li>🇨🇳 Chinês</li>
+            <li>🇮🇳 Hindi</li>
+            <li>🇯🇵 Japonês</li>
+            <li>🇫🇷 Francês</li>
+            <li>🇩🇪 Alemão</li>
+            <li>🇪🇸 Espanhol</li>
+            <li>🇮🇹 Italiano</li>
+        </ul>        
+        <img src="tutorial - 4 selecionar idioma.png" alt="Botão de iniciar extração" class="img-solucao">
+    </div>
+
+    <div class="step">
+        <h3>▶️ Visualize os dados extraídos</h3>
+        <p>⏳ Clique no botão <img src="processar.png" class="icon"> para começar o processo de extração. Aguarde enquanto o texto é extraído.</p>
+        <p>✅ Será possível visualizar o documento original e os dados extraídos logo abaixo</p>
+        <img src="tutorial - 5 processar e visualizar.png" alt="Texto extraído" class="img-solucao">
+    </div>
+
+    <div class="step">
+        <h3>🔄 Opção de recolher e estender a visualização</h3>
+        <p>Clique no botão "▼ ou ▲" para adaptar sua visualização em tela.</p>
+        <img src="tutorial - 6 zoom visualização.png" alt="Texto extraído" class="img-solucao">
+    </div>
+
+    <div class="step">
+        <h3>🔑 Palavras-chave</h3>
+        <p>Extrair somente paragrafos relacionados as palavras-chave indicadas no campo de texto.</p>
+        <p>É possível indicar quantas palavras-chave forem necessárias separando-as por ",".</p>
+        <p>Após indicar as palavras-chave clique no botão de processar novamente e veja a extração somente dos paragrafos relacionados.</p>
+        <img src="tutorial - 7 extração palavras chaves.png" alt="Texto extraído" class="img-solucao">
+    </div>
+
+    <h2>Recursos Adicionais</h2>
+    <p>🔄 <strong>Minimizar:</strong> Para minimizar a aplicação, clique no ícone de minimizar (🔽) localizado na parte superior esquerda da janela.</p>
+    <p>🌐 <strong>Idioma:</strong> Você pode alterar para até 10 idiomas de extração (🌐) selecionando a opção desejada.</p>
+    <p>🔑 <strong>Palavras-chave:</strong> Use o campo de palavras-chave (🔑) para facilitar a busca de textos específicos para extração.</p>
+
+    
+    <h2>Arquivos disponíveis para teste</h2>
+    <div class="downloads">
+        <a href="word.docx" download="word.docx">📄 Download do Arquivo DOCX</a>
+        <a href="pdf.pdf" download="pdf.pdf">📄 Download do Arquivo PDF</a>
+        <a href="image.jpeg" download="image.jpeg">🖼️ Download do Arquivo de Imagem</a>
+        <a href="Formulário Medico 1.pdf" download="image.jpeg">📄 Download do Arquivo PDF</a>
+        <a href="Formulário Medico 2.pdf" download="image.jpeg">📄 Download do Arquivo PDF</a>
+        <a href="Formulário Medico 3.pdf" download="image.jpeg">📄 Download do Arquivo PDF</a>
+    </div>
+
+    <p>Parabéns! Você completou o tutorial de utilização da nossa aplicação de extração de texto com OCR. Se você tiver alguma dúvida, assista novamente o vídeo tutorial ou entre em contato com o suporte.</p>
+
+</body>
+</html>
